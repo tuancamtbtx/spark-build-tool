@@ -1,11 +1,11 @@
-package com.apache.spark.entity;
+package com.apache.spark.spec;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 import java.util.Map;
 
-public class Step {
+public class StepSpec {
     @JsonProperty("name")
     public String name;
 
@@ -19,6 +19,6 @@ public class Step {
     public Map<String, String> options;
 
     @JsonProperty("operations")
-    public List<Operation> operations;
+    public List<OperationSpec> operations;
 
 }

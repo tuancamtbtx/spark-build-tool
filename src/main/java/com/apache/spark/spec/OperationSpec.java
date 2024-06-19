@@ -1,10 +1,10 @@
-package com.apache.spark.entity;
+package com.apache.spark.spec;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
 
-public class Operation {
+public class OperationSpec {
     @JsonProperty("operation")
     public String operation;
 

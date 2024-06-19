@@ -1,4 +1,4 @@
-package com.apache.spark.entity;
+package com.apache.spark.spec;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -12,7 +12,7 @@ import java.util.Map;
 @Data
 @Getter
 @Setter
-public class SparkJobConfig implements Serializable {
+public class SparkJobSpec implements Serializable {
     @JsonProperty("jobName")
     public String jobName;
 
@@ -32,5 +32,5 @@ public class SparkJobConfig implements Serializable {
     public Map<String, String> configurations;
 
     @JsonProperty("steps")
-    public List<Step> steps;
+    public List<StepSpec> steps;
 }
