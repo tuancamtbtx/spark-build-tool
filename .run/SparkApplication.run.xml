@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SparkApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="com.apache.spark.app.SparkApplication" />
+    <module name="spark-build-tool.main" />
+    <option name="PROGRAM_PARAMETERS" value="--config $PROJECT_DIR$/example/test_job.yaml" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.apache.spark.app.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

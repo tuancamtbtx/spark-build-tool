@@ -7,14 +7,14 @@ Dự án này thực hiện một Spark job sử dụng Java, với cấu hình 
 ## Cấu trúc dự án
 
 ```
-spark-job-project/
+spark-build-tool/
 ├── build.gradle
 ├── src/
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/
-│   │   │       └── example/
-│   │   │           └── sparkjob/
+│   │   │       └── apache/
+│   │   │           └── spark/
 │   │   │               ├── MainClass.java
 │   │   │               ├── SparkJobConfig.java
 │   ├── resources/

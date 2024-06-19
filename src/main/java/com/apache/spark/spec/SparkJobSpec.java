@@ -29,7 +29,7 @@ public class SparkJobSpec implements Serializable {
     public List<String> dependencies;
 
     @JsonProperty("configurations")
-    public Map<String, String> configurations;
+    public Map<String, Object> configurations;
 
     @JsonProperty("steps")
     public List<StepSpec> steps;

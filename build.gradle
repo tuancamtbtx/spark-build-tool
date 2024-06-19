@@ -8,7 +8,17 @@ version = '1.0'
 repositories {
     mavenCentral()
 }
-
+ext {
+    guavaVersion = "30.1.1-jre"
+    protobufVersion = "3.17.3"
+    kafkaVersion = "3.0.0"
+    jacksonVersion = "2.13.1"
+    sparkVersion = "3.5.1"
+    protoGenValidateVersion = "0.4.1"
+    scalaVersion = "2.12"
+    driverVersion = "4.5.1"
+    juniperVersion = "5.8.0"
+}
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
@@ -17,6 +27,8 @@ dependencies {
     implementation("org.slf4j:slf4j-reload4j:1.7.36")
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.20.0'
     implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.20.0'
+    implementation 'org.slf4j:slf4j-api:1.7.32' // Use the latest version
+
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.28'
     implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.15.2'
     annotationProcessor "org.projectlombok:lombok:1.18.28"

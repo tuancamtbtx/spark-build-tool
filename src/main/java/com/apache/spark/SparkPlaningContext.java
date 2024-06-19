@@ -1,4 +1,4 @@
-package com.apache.spark.sql;
+package com.apache.spark;
 
 public class SparkPlaningContext {
 }
