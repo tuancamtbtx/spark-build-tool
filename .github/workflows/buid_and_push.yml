@@ -1,4 +1,4 @@
-name: MageAI
+name: SparkBuildTool
 
 on:
   push:
